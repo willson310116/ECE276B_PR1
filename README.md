@@ -28,18 +28,14 @@ There are 7 test scenes you have to test and include in the report.
 pip install -r requirements.txt
 ```
 
-## Instruction
-### 1. doorkey.py
-You will need to modify **doorkey.py** as the main entrance.
+## Run code:
+```bash
+python3 doorkey.py
+```
 
-### 2. utils.py
-You might find some useful tools in utils.py
-- **step()**: Move your agent
-- **generate_random_env()**: Generate a random environment for debugging
-- **load_env()**: Load the test environments
-- **save_env()**: Save the environment for reproducing results
-- **plot_env()**: For a quick visualization of your current env, including: agent, key, door, and the goal
-- **draw_gif_from_seq()**: Draw and save a gif image from a given action sequence.
-
-### 3. example.py
-The example.py shows you how to interact with the utilities in utils.py, and also gives you some examples of interacting with gym-minigrid directly.
+## Source code description:
+- **doorkey.py**: Main function.
+- **planning.py**: DP algorithm door key problem.
+- **test.ipynb**: Debug and test functions.
+- **example.py**: Shows you how to interact with the utilities in utils.py, and also gives you some examples of interacting with gym-minigrid directly.
+- **utils.py**: Functions for file loading, env plotting, gif plotting, etc.
